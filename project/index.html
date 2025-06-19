@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GR WEB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="testimonials-effects.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">GURURAM's WEB</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#carousel">Carousel</a></li>
+          <li class="nav-item"><a class="nav-link" href="#parallax">Parallax</a></li>
+          <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="vh-100 position-relative overflow-hidden d-flex align-items-center justify-content-center text-center text-white">
+    <video autoplay muted loop playsinline class="position-absolute w-100 h-100 object-fit-cover" style="top:0; left:0; z-index:-1;">
+      <source src="/asserts/homepage.mp4" type="video/mp4" />
+    </video>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Powerful Features</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="/asserts/powerful feature/pexels-asphotograpy-518244.jpg" class="card-img-top" alt="Feature Rich Services" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Feature-Rich Services</h5>
+              <p class="card-text">Explore a wide range of services with cutting-edge technology and smooth user experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="/asserts/powerful feature/pexels-elevate-1267315.jpg" class="card-img-top" alt="Beautiful Card Designs" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Beautiful Card Designs</h5>
+              <p class="card-text">Showcase your content with elegant and responsive card layouts.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100">
+            <img src="/asserts/powerful feature/pexels-olly-845451.jpg" class="card-img-top" alt="Interactive Ripple Effects" loading="lazy" />
+            <div class="card-body">
+              <h5 class="card-title">Interactive Ripple Effects</h5>
+              <p class="card-text">Engage users with subtle and smooth ripple animations on interactive elements.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel Section -->
+  <section id="carousel" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Dynamic Carousel</h2>
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner rounded shadow">
+          <div class="carousel-item active">
+            <img src="/asserts/dynamic carousel/pexels-828860-2639947.jpg" class="d-block w-100" alt="Dynamic Pic 1" loading="lazy" />
+           
+          </div>
+          <div class="carousel-item">
+            <img src="/asserts/dynamic carousel/pexels-harper-sunday-2866796.jpg" class="d-block w-100" alt="Dynamic Pic 2" loading="lazy"/>
+          </div>
+          <div class="carousel-item">
+            <img src="/asserts/dynamic carousel/pexels-suzyhazelwood-2537930.jpg" class="d-block w-100" alt="Dynamic Pic 3" loading="lazy" />
+          </div>
+          <div class="carousel-item">
+            <img src="/asserts/dynamic carousel/pexels-suzyhazelwood-2533266.jpg" class="d-block w-100" alt="Dynamic Pic 4" loading="lazy" />
+            
+          <div class="carousel-item">
+            <img src="assets/graph.png" class="d-block w-100" alt="Graph" loading="lazy" />
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax Section -->
+  <section id="parallax" class="parallax text-white d-flex align-items-center" style="background-image: url('assets/striking - any simple object can be used.mp4'); height: 60vh;">
+    <div class="container text-center">
+      <h2 class="display-4 fw-bold">Unleash Your Inner Glow</h2>
+      <p class="lead">Experience the transformative power of clean, <br> makeup crafted to celebrate every shade, every skin type, <br>and every expression of beauty—because you deserve products as bold,<br> radiant, and unique as you are.
+
+</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">What Our Clients Say</h2><br>
+      <div class="row g-4">
+        <div class="col-md-6 testimonial-video-container">
+          <video controls class="w-100 rounded shadow testimonial-video" loading="lazy">
+            <source autoplay loop src="/asserts/testimonials.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col-md-6 testimonial-text-container d-flex align-items-center justify-content-center">
+          <h3 class="shining-text text-center">Our Clients Love Us!</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats and Graph Section -->
+  <section id="statsGraph" class="py-5 bg-white text-center">
+    <div class="container">
+      <h2 class="mb-5">Stats & Graph</h2>
+      <div class="row justify-content-center g-4">
+        <div class="col-md-6">
+          <img src="/asserts/graph.png" alt="Stats" class="img-fluid rounded shadow bouncing-up" />
+        </div>
+        <div class="col-md-6">
+          <img src="/asserts/stats.png" alt="Graph" class="img-fluid rounded shadow bouncing-up" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Get in Touch</h2>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required />
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required />
+          <div class="invalid-feedback">Please enter a valid email.</div>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" placeholder="Your Message" rows="5" required></textarea>
+          <div class="invalid-feedback">Please enter your message.</div>
+        </div>
+        <div class="col-12 text-center">
+          <button class="btn btn-primary ripple" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" title="Back to top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
